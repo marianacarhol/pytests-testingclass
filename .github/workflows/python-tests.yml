@@ -28,4 +28,6 @@ jobs:
 
       - name: Ejecutar tests con unittest
         run: |
-          python -m unittest discover -s . -t . -p "test_*.py" -v
+          python -m unittest discover -s fizzbuzz -p "test_*.py" -v
+          python -m unittest discover -s math -p "test_*.py" -v
+          python -m unittest discover -s shoppingcart -p "test_*.py" -v
